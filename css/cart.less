@@ -1,0 +1,604 @@
+@fontColor: #92846e;
+@hoverColor: #b0171f;
+@navColor: #fefefe;
+@navbgColor: #b8afa3;
+@navhovColor: #666;
+@inputBoderColor: #abadb3;
+@inputfontColor: #be9385;
+@priceUSDColor: #9e1d34;
+@shopborColor: #ffffff;
+@moreAColor: #666666;
+@footTopColor: #666;
+.box(){
+    width: 950px;
+    margin:0 auto;
+}
+.transformY(){
+    -webkit-transform:translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.transformX(){
+    -webkit-transform:translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.box_shadow-X(){
+    -webkit-box-shadow: -3px 0 5px #999999;
+    -moz-box-shadow: -3px 0 5px #999999;
+    box-shadow: -3px 0 5px #999999;
+}
+.box_shadowX(){
+    -webkit-box-shadow: 3px 0 3px #999999;
+    -moz-box-shadow: 3px 0 5px #999999;
+    box-shadow: 3px 0 5px #999999;
+}
+.box_shadow-Y(){
+    -webkit-box-shadow: 0px -3px 5px #999999;
+    -moz-box-shadow: 0px -3px 5px #999999;
+    box-shadow: 0px -3px 5px #999999;
+}
+.box_shadowY(){
+    -webkit-box-shadow: 0px 3px 5px #999999;
+    -moz-box-shadow: 0px 3px 5px #999999;
+    box-shadow: 0px 3px 5px #999999;
+}
+#main{
+    .content{
+        .shopping_cart{
+            width: 100%;
+            float: left;
+            margin-bottom: 5px;
+            .sh_cart_hp{
+                width: 165px;
+                padding-top: 20px;
+                padding-left: 20px;
+                float: left;
+                h2{
+                    font-size: 16px;
+                    color: @fontColor;
+                    margin-bottom: 10px;
+                }
+                a{
+                    display: block;
+                    font-size: 12px;
+                    text-indent: 5px;
+                    color: #666666;
+                    line-height: 25px;
+                    &:hover{
+                        color: #B0171F;
+                    }
+                }
+            }
+            .sh_cart_cont{
+                width: 720px;
+                position: relative;
+                background: #FFFFFF;
+                float: right;
+                margin-right: 20px;
+                .shadow_lf{
+                    width: 5px;
+                    height: 80%;
+                    position: absolute;
+                    z-index: 0;
+                    border-radius: 5px;
+                    left: 0;
+                    bottom: 0;
+                    .box_shadow-X();
+                }.shadow_bt{
+                    width: 100%;
+                    height: 5px;
+                    position: absolute;
+                    z-index: 0;
+                    left: 0;
+                    bottom: 0;
+                    border-radius: 10px;
+                    .box_shadowY();
+                }
+                .shadow_rg{
+                    width: 10px;
+                    height: 80%;
+                    position: absolute;
+                    z-index: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 5px;
+                    .box_shadowX();
+                }
+                h1{
+                    padding-top: 20px;
+                    text-indent: 30px;
+                    line-height: 25px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: @fontColor;
+                }
+                .cart_gb{
+                    position: absolute;
+                    right: 0;
+                    top: 20px;
+                    line-height: 25px;
+                    color: #666666;
+                    h3{
+                        float: left;
+                        font-weight: normal;
+                        font-size: 15px;
+                        padding:0 20px;
+                    }
+                    span{
+                        font-size: 15px;
+                        padding:0 20px;
+                        float: left;
+                        i{
+                            font-style: normal;
+                            padding-right: 20px;
+                        }
+                        &.active{
+                            color: #000000;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+                .see_My_cart{
+                    width: 100%;
+                    background: #e76600;text-indent: 75px;
+                    line-height: 30px;
+                    position: relative;
+                    img{
+                        display: block;
+                    }
+                }
+                .dis_My_cart{
+                    .Notes{
+                        width: 600px;
+                        margin:0 auto;
+                        font-size: 12px;
+                        padding:10px 30px;
+                        background: #ffe285;
+                        margin-bottom: 20px;
+                        span{
+                            color: #666666;
+                            text-indent: 25px;
+                            display: block;
+                        }
+                        p{
+                            padding-top: 15px;
+                            line-height: 15px;
+                            color: #666666;
+                            a{
+                                color: #666666;
+                                &:hover{
+                                    color: #B0171F;
+                                }
+                            }
+                        }
+                        b{
+                            display: block;
+                            padding-top: 20px;
+                            line-height: 15px;
+                            font-weight: normal;
+                            color: #990033;
+                        }
+                        i{
+                            display: block;
+                            font-style: normal;
+                            padding-top: 20px;
+                            line-height: 15px;
+                            color: #990033;
+                        }
+                    }
+                    .cart_box{
+                        width: 639px;
+                        margin:0 auto;
+                        border:1px solid #CCCCCC;
+                        .cart_box_top{
+                            height: 48px;
+                            text-align: center;
+                            border-bottom: 1px solid #CCCCCC;
+                            background: #ededed;
+                            &:after{
+                                content: ".";
+                                display: block;
+                                clear: both;
+                                height: 0;
+                                visibility: hidden;
+                            }
+                            div{
+                                float: left;
+                                color: #666666;
+                            }
+                            .pic{
+                                width: 122px;
+                                line-height: 48px;
+                                border-right:1px solid #CCCCCC;
+                            }
+                            .goodsName{
+                                width: 174px;
+                                line-height: 48px;
+                                border-right:1px solid #CCCCCC;
+                            }
+                            .goodsPrice{
+                                width: 103px;
+                                padding-top: 10px;
+                                line-height: 15px;
+                                height: 38px;
+                                border-right:1px solid #CCCCCC;
+                            }
+                            .goodsNum{
+                                width: 63px;
+                                line-height: 48px;
+                                border-right:1px solid #CCCCCC;
+                            }
+                            .subtotal{
+                                width: 97px;
+                                padding-top: 10px;
+                                height: 38px;
+                                line-height: 15px;
+                                border-right:1px solid #CCCCCC;
+                            }
+                            .goodsDelet{
+                                width: 74px;
+                                line-height: 48px;
+                            }
+                        }
+                        .cart_box_con{
+                             &:after{
+                                    content: ".";
+                                    display: block;
+                                    height: 0;
+                                    clear: both;
+                                    visibility: hidden;
+                                }
+                            .cart_goods{
+                                border-bottom:1px solid #CCCCCC;
+                                height: 145px;
+                                &:after{
+                                    content: ".";
+                                    display: block;
+                                    height: 0;
+                                    clear: both;
+                                    visibility: hidden;
+                                }
+                                div{
+                                    float: left;
+                                    border-right:1px solid #CCCCCC;
+                                }
+                                .pic{
+                                    width: 102px;
+                                    padding: 10px;
+                                    height: 125px;
+                                    img{
+                                        display: block;
+                                    }
+                                }
+                                .goodsName{
+                                    width: 158px;
+                                    padding: 8px;
+                                    height: 129px;
+                                    h5{
+                                        width: 100%;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        img{
+                                            margin-top: 3px;
+                                        }
+                                    }
+                                    a{
+                                        display: block;
+                                        width: 100%;
+                                        color: #666666;
+                                        font-size: 12px; 
+                                        line-height: 20px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        &:hover{
+                                            color: red;
+                                        }
+                                    }
+                                    .color{
+                                        width: 100%;
+                                        height: 20px;
+                                        color: #666666;
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                    }
+                                    .goods_ml{
+                                        color: #666666;
+                                        font-size: 12px;
+                                        line-height: 20px;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                    }
+                                    .goods_code{
+                                        color: #666666;
+                                        font-size: 12px;
+                                    }
+                                }
+                                .goodsPrice{
+                                    text-align: center;
+                                    width: 103px;
+                                    height: 145px;
+                                    border-right:1px solid #CCCCCC;
+                                    b{
+                                        color: #666666;
+                                        display: block;
+                                        margin-top: 30%;
+                                    }
+                                    s{
+                                        display: block;
+                                        color: #666666;
+                                        margin-top: 25px;
+                                    }
+                                    cite{
+                                        font-size: 10px;
+                                        font-style: normal;
+                                        color: #DD7F95;
+                                    }
+                                }
+                                .goodsNum{
+                                    width: 63px;
+                                    height: 145px;
+                                    border-right:1px solid #CCCCCC;
+                                    select{
+                                        display: block;
+                                        margin:0 auto;
+                                        margin-top: 80%;
+                                    }
+                                }
+                                .subtotal{
+                                    width: 97px;
+                                    height: 145px;
+                                    text-align: center;
+                                    border-right:1px solid #CCCCCC;
+                                    b{
+                                        color: #666666;
+                                        display: block;
+                                        margin-top: 50%;
+                                        img{
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                                .goodsDelet{
+                                    line-height: 145px;
+                                    text-align: center;
+                                    width: 74px;
+                                }
+                            }
+                            
+                        }
+                        .cart_box_bot{
+                            height: 32px;
+                            line-height: 32px;
+                            span{
+                                float: left;
+                                text-align: right;
+                                width: 455px;
+                                padding-right: 10px;
+                                border-right:1px solid #CCCCCC;
+                                text-indent: 10px;
+                            }
+                            .total{
+                                float: right;
+                                width: 173px;
+                                text-indent: 10px;
+                                background: #ededed;
+                            }
+                        }
+                    }
+                    .convey{
+                        width: 660px;
+                        margin:0 auto;
+                        margin-top: 50px;
+                        margin-bottom: 20px;
+                        h3{
+                          font-size: 16px;
+                          color: @fontColor;
+                          letter-spacing: 5px; 
+                          text-indent: 20px; 
+                        }
+                        .convey_Note{
+                            width: 460px;
+                            padding:0 100px;
+                            background: #EDEDED;
+                            border-radius: 8px;
+                            color: #666666;
+                            font-size: 10px;
+                            span{
+                                line-height: 30px;
+                            }
+                            ol{
+                                padding:10px 0;
+                                margin-left: 40px;
+                                li{
+                                    list-style-type: decimal;
+                                }
+                            }
+                        }
+                    }
+                    .mate{
+                        width: 660px;
+                        margin:0 auto;
+                        h3{
+                            font-size: 16px;
+                            color: @fontColor;
+                            letter-spacing: 5px; 
+                            text-indent: 20px;
+                        }
+                        .mate_cont{
+                            width: 100%;
+                            background: #EDEDED; 
+                            border-radius: 5px; 
+                            margin-bottom: 35px;
+                            .chose_pay{
+                                &:after{
+                                    content: ".";
+                                    display: block;
+                                    height: 0;
+                                    clear: both;
+                                    visibility: hidden;
+                                }
+                                span{
+                                    float: left;
+                                    display: block;
+                                    width: 180px;
+                                    margin-top: 5px;
+                                    line-height: 25px;
+                                    text-indent: 10px;
+                                    color: #666666;
+                                }
+                                .choose{
+                                    float: right;
+                                    width: 475px;
+                                    margin-top: 5px;
+                                    select{
+                                        width: 163px;
+                                        height: 18px;
+                                        border:1px solid #CCCCCC;
+                                        float: left;
+                                        text-indent: 10px;
+                                    }
+                                    ul{
+                                        display: block;
+                                        width: 100%;
+                                        overflow: hidden;
+                                        a{
+                                            float: left;
+                                            height: 30px;
+                                        }
+                                        .Paypal{
+                                            width: 50px;
+                                            background: url(../img/cart_pay.gif) no-repeat 0 0;
+                                        }
+                                        .Alipay{
+                                            width: 60px;
+                                            background: url(../img/cart_pay.gif) no-repeat -50px 0;
+                                        }
+                                        .Tenpay{
+                                            width: 75px;
+                                            background: url(../img/cart_pay.gif) no-repeat -115px 0;
+                                        }
+                                        .Wepay{
+                                            width: 85px;
+                                            background: url(../img/cart_pay.gif) no-repeat -186px 0;
+                                        }
+                                        .EBANX{
+                                            width: 45px;
+                                            background: url(../img/cart_pay.gif) no-repeat -275px 0;
+                                        }
+                                        .VISA{
+                                            width: 55px;
+                                            background: url(../img/cart_pay.gif) no-repeat -316px 0;
+                                        }
+                                        .Pay{
+                                            width: 50px;
+                                            background: url(../img/cart_pay.gif) no-repeat -370px 0;
+                                        }
+                                        .Unionpay{
+                                            width: 40px;
+                                            background: url(../img/cart_pay.gif) no-repeat -420px 0;
+                                        }
+                                        .Atpay{
+                                            width: 50px;
+                                            background: url(../img/cart_pay.gif) no-repeat 0 -30px;
+                                        }
+                                    }
+                                }
+                            }
+                            .Pay_code{
+                                width: 100%;
+                                background: #FFE285;
+                                border-bottom-left-radius: 5px;
+                                border-bottom-right-radius: 5px;  
+                                &:after{
+                                    content: ".";
+                                    display: block;
+                                    height: 0;
+                                    clear: both;
+                                    visibility: hidden;
+                                }
+                                span{
+                                    width: 180px;
+                                    margin-top: 5px;
+                                    text-indent: 10px;
+                                    color: #666666;
+                                    float: left;
+                                }
+                                input{
+                                    float: left;
+                                    font-size: 12px;
+                                    line-height: 20px;
+                                    text-indent: 10px;
+                                    margin: 5px 0;
+                                    width: 261px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .other{
+                        width: 660px;
+                        border-top:1px dashed #CCCCCC;
+                        margin:0px auto;
+                        margin-bottom: 40px;
+                        overflow: hidden;
+                        a{
+                            float: left;
+                            padding-left: 20px;
+                            font-size: 12px;
+                            line-height: 25px;
+                            color: #666666; 
+                            &:before{
+                                content: url(../img/arrow_p.gif);
+                            }
+                            &:hover{
+                                color: #B0171F;
+                                cursor: pointer;
+                            }
+                        }
+                        .Go_to_pay{
+                            float: right;
+                            width: 320px;
+                            padding-top: 5px;
+                            img{
+                                float: left;
+                                margin-left: 35px;
+                            }
+                            a{
+                               float: left;
+                               width: 112px;
+                               height: 26px;
+                               padding: 0;
+                               text-align: center;
+                               letter-spacing: 2px;
+                               line-height: 24px;
+                               color: #FFFFFF;
+                               cursor: pointer;
+                               margin-left: 20px;
+                               background: #d78833 url(../img/star_pay_01.jpg);
+                               &:hover{
+                                   color: #FFF000;
+                               }
+                            }
+                            p{
+                                width: 320px;
+                                display: block;
+                                float: left;
+                                font-size: 12px;
+                                line-height: 25px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

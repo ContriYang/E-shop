@@ -1,0 +1,317 @@
+#main .content .shop_box {
+  width: 910px;
+  margin: 0 auto;
+}
+#main .content .shop_box:before {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#main .content .shop_box .shop_left {
+  width: 170px;
+  float: left;
+}
+#main .content .shop_box .shop_left h3 {
+  color: #92846e;
+  line-height: 35px;
+}
+#main .content .shop_box .shop_left h4 {
+  color: #92846e;
+  font-weight: 100;
+  line-height: 30px;
+}
+#main .content .shop_box .shop_left h4:hover {
+  color: #b0171f;
+  cursor: pointer;
+}
+#main .content .shop_box .shop_left li {
+  width: 100%;
+  text-indent: 5px;
+  font-size: 12px;
+}
+#main .content .shop_box .shop_left li span {
+  line-height: 25px;
+  cursor: pointer;
+  color: #333333;
+}
+#main .content .shop_box .shop_left li span:hover {
+  color: #b0171f;
+}
+#main .content .shop_box .shop_left li div {
+  display: none;
+}
+#main .content .shop_box .shop_left li div a {
+  cursor: pointer;
+  color: #333333;
+  font-size: 9px;
+  text-indent: 20px;
+  line-height: 20px;
+  display: block;
+}
+#main .content .shop_box .shop_left li div a:hover {
+  color: #b0171f;
+}
+#main .content .shop_box .shop_left li.one a {
+  line-height: 25px;
+  cursor: pointer;
+  color: #333333;
+}
+#main .content .shop_box .shop_left li.one a:hover {
+  color: #b0171f;
+}
+#main .content .shop_box .shop_right {
+  width: 720px;
+  float: right;
+}
+#main .content .shop_box .shop_right .Img img {
+  display: block;
+}
+#main .content .shop_box .shop_right .submenu {
+  width: 100%;
+  background: #93846f;
+}
+#main .content .shop_box .shop_right .submenu:after {
+  content: ".";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
+}
+#main .content .shop_box .shop_right .submenu li {
+  float: left;
+  height: 44px;
+  margin: 3px 0;
+  position: relative;
+  cursor: pointer;
+}
+#main .content .shop_box .shop_right .submenu li.New_goods {
+  width: 145px;
+  border-right: 1px solid #ad9e8f;
+}
+#main .content .shop_box .shop_right .submenu li.New_goods p {
+  width: 70%;
+  float: left;
+  padding-left: 50px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#main .content .shop_box .shop_right .submenu li.New_goods p:before {
+  content: url(../img/arrow_n.gif);
+  position: absolute;
+  top: 0;
+  left: 38px;
+}
+#main .content .shop_box .shop_right .submenu li.edit_share {
+  width: 360px;
+}
+#main .content .shop_box .shop_right .submenu li b,
+#main .content .shop_box .shop_right .submenu li span {
+  display: block;
+  color: #FFFFFF;
+}
+#main .content .shop_box .shop_right .submenu li b {
+  color: #FFFFFF;
+}
+#main .content .shop_box .shop_right .submenu li span {
+  font-size: 9px;
+}
+#main .content .shop_box .shop_right .submenu li p {
+  width: 60%;
+  float: left;
+  padding-left: 50px;
+  position: relative;
+  z-index: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#main .content .shop_box .shop_right .submenu li p:before {
+  content: url(../img/arrow_n.gif);
+  position: absolute;
+  top: 0;
+  left: 38px;
+}
+#main .content .shop_box .shop_right .submenu li i {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  background: #B8AFA3;
+  z-index: 0;
+  display: none;
+}
+#main .content .shop_box .shop_right .submenu li img {
+  position: absolute;
+  left: 77px;
+  top: 47px;
+}
+#main .content .shop_box .shop_right .submenu li:hover i {
+  display: block;
+}
+#main .content .shop_box .shop_right .goods_dis {
+  position: relative;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+#main .content .shop_box .shop_right .goods_dis:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#main .content .shop_box .shop_right .goods_dis .shop_lef {
+  width: 10px;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: -3px 0 5px #999999;
+  -moz-box-shadow: -3px 0 5px #999999;
+  box-shadow: -3px 0 5px #999999;
+}
+#main .content .shop_box .shop_right .goods_dis .shop_bot {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 5px #999999;
+  -moz-box-shadow: 0px 3px 5px #999999;
+  box-shadow: 0px 3px 5px #999999;
+}
+#main .content .shop_box .shop_right .goods_dis .shop_rig {
+  width: 10px;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 3px 0 3px #999999;
+  -moz-box-shadow: 3px 0 5px #999999;
+  box-shadow: 3px 0 5px #999999;
+}
+#main .content .shop_box .shop_right .goods_dis .spacing {
+  height: 20px;
+}
+#main .content .shop_box .shop_right .goods_dis li {
+  float: left;
+  width: 150px;
+  height: 340px;
+  background: #FFFFFF;
+  position: relative;
+  border: 1px solid #ffffff;
+  margin: 0px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#main .content .shop_box .shop_right .goods_dis li .goods_Img {
+  width: 170px;
+  height: 170px;
+  margin: 10px auto;
+  overflow: hidden;
+  position: relative;
+  background: #FFFFFF;
+}
+#main .content .shop_box .shop_right .goods_dis li .goods_Img img {
+  display: block;
+  height: 94%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#main .content .shop_box .shop_right .goods_dis li .descripe {
+  width: 140px;
+  margin: 0 auto;
+  height: 95px;
+  overflow: hidden;
+}
+#main .content .shop_box .shop_right .goods_dis li .descripe .label {
+  width: 100%;
+  height: 16px;
+}
+#main .content .shop_box .shop_right .goods_dis li .descripe .label img {
+  display: block;
+}
+#main .content .shop_box .shop_right .goods_dis li .descripe .shop_name {
+  width: 100%;
+  font-size: 12px;
+  color: #92846e;
+  cursor: pointer;
+}
+#main .content .shop_box .shop_right .goods_dis li .descripe .shop_name:hover {
+  color: red;
+}
+#main .content .shop_box .shop_right .goods_dis li .descripe span {
+  width: 140px;
+  line-height: 15px;
+  margin: 0 auto;
+  display: block;
+  font-size: 9px;
+  color: #92846e;
+  cursor: pointer;
+}
+#main .content .shop_box .shop_right .goods_dis li .descripe span:hover {
+  color: red;
+}
+#main .content .shop_box .shop_right .goods_dis li .hr {
+  width: 150px;
+  height: 1px;
+  margin: 0 auto;
+  background: #666666;
+  border-radius: 50%;
+}
+#main .content .shop_box .shop_right .goods_dis li .shop_price {
+  width: 140px;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+#main .content .shop_box .shop_right .goods_dis li .shop_price .CNY {
+  width: 100%;
+  text-indent: 5px;
+  font-size: 13px;
+  font-weight: 100;
+  color: #92846e;
+}
+#main .content .shop_box .shop_right .goods_dis li .shop_price .USD {
+  width: 100%;
+  font-size: 13px;
+  text-indent: 5px;
+  color: #9e1d34;
+}
+#main .content .shop_box .shop_right .goods_dis li .shop_price .save {
+  width: 100%;
+  display: block;
+  font-size: 13px;
+  text-indent: 5px;
+  color: #dd7f95;
+}
+#main .content .shop_box .shop_right .goods_dis .more_shop {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+#main .content .shop_box .shop_right .goods_dis .more_shop a {
+  font-size: 10px;
+  color: #666666;
+}
+#main .content .shop_box .shop_right .goods_dis .more_shop a:hover {
+  color: #b0171f;
+}
+/*# sourceMappingURL=facecare.css.map */

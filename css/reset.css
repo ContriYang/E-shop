@@ -1,0 +1,35 @@
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dd,
+dt,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "微软雅黑";
+  font-size: 15px;
+  min-width: 950px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+/*# sourceMappingURL=reset.css.map */

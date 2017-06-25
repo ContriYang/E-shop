@@ -1,0 +1,23 @@
+{"shop":[
+  {
+	  "spid":"1","con":[{"id":"1_1","price":{"CNY":"281.00","USD":"41.00"},"src":"img/shops/1_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"Nutritive 滋养修复发膜 (适合极干性发质)","save":"41%","brands":"Kérastase Paris 卡诗"}],"brand":"Kérastase Paris"
+  },{
+	  "spid":"2","con":[{"id":"2_1","price":{"CNY":"311.00","USD":"46.00"},"src":"img/shops/2_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"草本有机爽肤水 (适合中性或混合性肤质)","save":"29%","brands":"The Organic Pharmacy"}],"brand":"The Organic Pharmacy"
+  },{
+	  "spid":"3","con":[{"id":"3_1","price":{"CNY":"347.00","USD":"51.00"},"src":"img/shops/3_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"Ultimate Miracle Worker 极致抗老化再生保湿眼霜 SPF 15","save":"44%","brands":"Philosophy"}],"brand":"Philosophy"
+  },{
+	  "spid":"4","con":[{"id":"4_1","price":{"CNY":"564.00","USD":"83.00"},"src":"img/shops/4_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"Pro-Collagen 骨胶原洁面软霜","save":"","brands":"Elemis"}],"brand":"Elemis"
+  },{
+	  "spid":"5","con":[{"id":"5_1","price":{"CNY":"414.00","USD":"61.00"},"src":"img/shops/5_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"Renergie Multi-Lift 立体塑颜紧致保湿露","save":"25%","brands":"LANCÔME 兰蔻"}],"brand":"LANCÔME"
+  },{
+	  "spid":"6","con":[{"id":"6_1","price":{"CNY":"545","USD":"80.00"},"src":"img/shops/6_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"Immortelle 蜡菊乳霜面膜","save":"15%","brands":"L'Occitane 欧舒丹"}],"brand":"L'Occitane "
+  },{
+	  "spid":"7","con":[{"id":"7_1","price":{"CNY":"757.00","USD":"111.00"},"src":"img/shops/7_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"Snowise 滋晶雪滢焕白淡斑精华","save":"15%","brands":"Sulwhasoo 雪花秀"}],"brand":"Sulwhasoo"
+  },{
+	  "spid":"8","con":[{"id":"8_1","price":{"CNY":"859.00","USD":"126.00"},"src":"img/shops/8_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"Powercell 3D 生物纤维急救眼膜","save":"25%","brands":"Helena Rubinstein 赫莲娜"}],"brand":"Helena Rubinstein"
+  },{
+	  "spid":"9","con":[{"id":"9_1","price":{"CNY":"735.00","USD":"108.00"},"src":"img/shops/9_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"R.N.A. Power 立体紧致修护眼霜","save":"5%","brands":"SK-II 美之匙"}],"brand":"SK-II"
+  },{
+	  "spid":"10","con":[{"id":"10_1","price":{"CNY":"1356.00","USD":"200.00"},"src":"img/shops/10_1.jpg","brandsrc":{"0":"img/icon_new.gif"},"des":"Bichup 秘贴自润面霜","save":"20%","brands":"The History of Whoo 后"}],"brand":"The History of Whoo"
+  }
+]}

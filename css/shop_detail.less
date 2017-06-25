@@ -1,0 +1,405 @@
+@fontColor: #92846e;
+@hoverColor: #b0171f;
+@navColor: #fefefe;
+@navbgColor: #b8afa3;
+@navhovColor: #666;
+@inputBoderColor: #abadb3;
+@inputfontColor: #be9385;
+@priceUSDColor: #9e1d34;
+@shopborColor: #ffffff;
+@moreAColor: #666666;
+@footTopColor: #666;
+.box_shadow-X(){
+    -webkit-box-shadow: -3px 0 2px #cccccc;
+    -moz-box-shadow: -3px 0 2px #cccccc;
+    box-shadow: -3px 0 2px #cccccc;
+}
+.box_shadowX(){
+    -webkit-box-shadow: 3px 0 3px #cccccc;
+    -moz-box-shadow: 3px 0 3px #cccccc;
+    box-shadow: 3px 0 3px #cccccc;
+}
+.box_shadow-Y(){
+    -webkit-box-shadow: 0px -3px 3px #cccccc;
+    -moz-box-shadow: 0px -3px 3px #cccccc;
+    box-shadow: 0px -3px 3px #cccccc;
+}
+.box_shadowY(){
+    -webkit-box-shadow: 0px 3px 3px #cccccc;
+    -moz-box-shadow: 0px 3px 3px #cccccc;
+    box-shadow: 0px 3px 3px #cccccc;
+}
+.transformY(){
+    -webkit-transform:translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.transformX(){
+    -webkit-transform:translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+#main{
+    .content{
+        .main{
+            .main_left{
+                width: 170px;
+                padding-left: 20px;
+                padding-top: 20px;
+                h3{
+                    color: @fontColor;
+                    line-height: 35px;
+                }
+                h4{
+                    color: @fontColor;
+                    font-weight: 100;
+                    line-height: 30px;
+                    &:hover{
+                        color: @hoverColor;
+                        cursor: pointer;
+                    }
+                }
+                li{
+                    width: 100%;
+                    text-indent: 5px;
+                    font-size: 12px;
+                    
+                    span{
+                        line-height: 25px;
+                        cursor: pointer;
+                        color: #333333;
+                        &:hover{
+                            color: @hoverColor;
+                        }
+                    }
+                    div{
+                        display: none;
+                        a{
+                            cursor: pointer;
+                            color: #333333;
+                            font-size: 9px;
+                            text-indent: 20px;
+                            line-height: 20px;
+                            display: block;
+                            &:hover{
+                                color: @hoverColor;
+                            }
+                        }
+                    }
+                    &.one{
+                        a{
+                            line-height: 25px;
+                            cursor: pointer;
+                            color: #333333;
+                            &:hover{
+                                color: @hoverColor;
+                            }
+                        }
+                    }
+                }
+            }
+            .main_right{
+                width: 700px;
+                padding: 10px;
+                float: right;
+                margin-right: 20px;
+                position: relative;
+                background: #FFFFFF;
+                .m_r_l{
+                    width: 10px;
+                    height: 70%;
+                    position: absolute;
+                    left: 0;
+                    bottom: 3px;
+                    border-bottom-left-radius: 10px;
+                    z-index: 0;
+                    .box_shadow-X();
+                }
+                .m_r_b{
+                    width: 100%;
+                    height: 10px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 3px;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    z-index: 0;
+                    .box_shadowY();
+                }
+                .m_r_r{
+                    width: 10px;
+                    height: 70%;
+                    position: absolute;
+                    right: 0;
+                    bottom: 3px;
+                    border-bottom-right-radius: 10px;
+                    z-index: 0;
+                    .box_shadowX();
+                }
+                .shop_detail{
+                    width: 100%;
+                    position: relative;
+                    float: left;
+                    .mang_glass{
+                        width: 350px;
+                        float: left;
+                        margin-left: 20px;
+                        padding-bottom: 10px;
+                        position: relative;
+                        .m_g_Img{
+                            width: 100%;
+                            height: 350px;
+                            position: relative;
+                            .sm_img{
+                                width: 350px;
+                                height: 350px;
+                            }
+                            .top_lay{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                            .bot_lay{
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+                            }
+                            span{
+                                position: absolute;
+                                z-index: 1;
+                                bottom: 40px;
+                                right: 25px;
+                                font-size: 20px;
+                                font-weight: bolder;
+                                color: #fff;
+                            }
+                            p{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                display: none;
+                                width: 100px;
+                                height: 100px;
+                                z-index: 2;
+                                cursor: all-scroll;
+                                background: rgba(0,0,255,0.2);
+                            }
+                        }
+                        .m_g_b_Img{
+                            position: absolute;
+                            top: 0;
+                            left: 365px;
+                            width: 300px;
+                            height: 300px;
+                            display: none;
+                            overflow: hidden;
+                            img{
+                                position: absolute;
+                                top: -20px;
+                                left: 0;
+                            }
+                        }
+                    }
+                    .shop_des{
+                        width: 290px;
+                        padding:0 5px;
+                        min-height: 300px;
+                        float: left;
+                        margin-left: 10px;
+                        color: #333333;
+                        h2{
+                            line-height: 65px;
+                            font-size: 24px;
+                            color: #666666;
+                            font-family: "宋体";
+                            font-weight: 100;
+                        }
+                        .all{
+                            line-height: 20px;
+                            a{
+                                color: #333333;
+                                span{
+                                    display: block;
+                                    height: 50px;
+                                    &:after{
+                                        content: url(../img/arrow_n.gif);
+                                        position: relative; 
+                                        top: -2px;  
+                                        left: 3px;                                 }
+                                }
+                                &:hover{
+                                    color: red;
+                                }
+                            }
+                        }
+                        .des{
+                            height: 50px;
+                            width: 290px;
+                            
+                        }
+                        .add_myfouse{
+                            cursor: pointer;
+                            &:before{
+                                content: url(../img/add_icon_eng.gif);
+                            }
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                    .shop_display{
+                        clear: both;
+                        width: 660px;
+                        padding-top: 10px;
+                        margin: 0 auto;
+                        border-bottom:1px dashed #666666;
+                        position: relative;
+                        .s_d_top{
+                            width: 100%;
+                            height: 30px;
+                            font-size: 12px;
+                            line-height: 30px;
+                            text-align: center;
+                            border-bottom:1px dashed #666666;
+                            .shop_name{
+                                width: 270px;
+                                float: left;
+                            }
+                            .shop_ml{
+                                float: left;
+                                width: 90px;
+                            }
+                            .shop_price{
+                                width: 110px;
+                                float: left;
+                            }
+                            .shop_num{
+                                width: 90px;
+                                float: left;
+                            }
+                            .add_to_car{
+                                width: 100px;
+                                float: left;
+                            }
+                        }
+                        .s_d_dis{
+                            width: 100%;
+                            overflow: hidden;
+                            div{
+                                float: left;
+                            }
+                            .shop_dis_box{
+                                width: 100%;
+                                position: relative;
+                                .shop_dis_na{
+                                    width: 270px;
+                                    .shop_dis_na_le{
+                                        text-align: center;
+                                        width: 105px;
+                                        height: 100px;
+                                        img{
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 0;
+                                            width: 100px;
+                                            height: 100px;
+                                            .transformY();
+                                        }
+                                    }
+                                    .shop_dis_na_ri{
+                                        width: 165px;
+                                        padding:10px 0;
+                                        font-size: 12px;
+                                        p{
+                                            width: 100%;
+                                        }
+                                        .title{
+                                            height: 30px;
+                                            padding-top: 2px;
+                                        }
+                                        .s_dis_box_des{
+                                            line-height: 20px;
+                                            height: auto;
+                                        }
+                                        .color{
+                                            height: 20px;
+                                        }
+                                        .shop_time{
+                                            color: #DD7F95;
+                                        }
+                                    }
+                                }
+                                .shop_dis_ml{
+                                    width: 90px;
+                                    padding:45px 0;
+                                    font-size: 9px;
+                                    color: #666666;
+                                    text-align: center;
+                                }
+                                .shop_dis_pri{
+                                    padding-top: 45px;
+                                    text-align: center;
+                                    width: 110px;
+                                    overflow: hidden;
+                                    font{
+                                        display: block;
+                                        width: 100%;
+                                        min-height: 10px;
+                                        font-size: 9px;
+                                    }
+                                    strong{
+                                        color: brown;
+                                        display: block;
+                                        margin-top: -3px;
+                                        font-size: 9px;
+                                        min-height: 10px;
+                                    }
+                                    b{
+                                        display: block;
+                                        margin-top: 10px;
+                                        font-size: 9px;
+                                        color: #666666;
+                                    }
+                                    i{
+                                        display: block;
+                                        color: #DD7F95;
+                                        font-size: 9px;
+                                        margin-top: -3px;
+                                    }
+                                }
+                                .shop_dis_num{
+                                    width: 90px;
+                                    padding-top: 40px;
+                                    select{
+                                        display: block;
+                                        margin:0 auto;
+                                    }
+                                }
+                                .s_d_add_car{
+                                    width: 100px;
+                                    text-align: center;
+                                    span{
+                                        display: block;
+                                        background: url(../img/add_to_cart_01.gif);
+                                        margin:0 auto;
+                                        width: 99px;
+                                        height: 21px;
+                                        margin-top: 40px;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background: url(../img/add_to_cart_02.gif);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

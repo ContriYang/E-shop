@@ -1,0 +1,312 @@
+@fontColor: #92846e;
+@hoverColor: #b0171f;
+@navColor: #fefefe;
+@navbgColor: #b8afa3;
+@navhovColor: #666;
+@inputBoderColor: #abadb3;
+@inputfontColor: #be9385;
+@priceUSDColor: #9e1d34;
+@shopborColor: #ffffff;
+@moreAColor: #666666;
+@footTopColor: #666;
+.box(){
+    width: 950px;
+    margin:0 auto;
+}
+.transformY(){
+    -webkit-transform:translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.transformX(){
+    -webkit-transform:translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.box_shadow-X(){
+    -webkit-box-shadow: -3px 0 5px #999999;
+    -moz-box-shadow: -3px 0 5px #999999;
+    box-shadow: -3px 0 5px #999999;
+}
+.box_shadowX(){
+    -webkit-box-shadow: 3px 0 3px #999999;
+    -moz-box-shadow: 3px 0 5px #999999;
+    box-shadow: 3px 0 5px #999999;
+}
+.box_shadow-Y(){
+    -webkit-box-shadow: 0px -3px 5px #999999;
+    -moz-box-shadow: 0px -3px 5px #999999;
+    box-shadow: 0px -3px 5px #999999;
+}
+.box_shadowY(){
+    -webkit-box-shadow: 0px 3px 5px #999999;
+    -moz-box-shadow: 0px 3px 5px #999999;
+    box-shadow: 0px 3px 5px #999999;
+}
+#main{
+    .content{
+        .shopping_cart{
+            width: 100%;
+            float: left;
+            margin-bottom: 5px;
+            .sh_cart_hp{
+                width: 165px;
+                padding-top: 20px;
+                padding-left: 20px;
+                float: left;
+                h2{
+                    font-size: 16px;
+                    color: @fontColor;
+                    margin-bottom: 10px;
+                }
+                a{
+                    display: block;
+                    font-size: 12px;
+                    text-indent: 5px;
+                    color: #666666;
+                    line-height: 25px;
+                    &:hover{
+                        color: #B0171F;
+                    }
+                }
+            }
+            .sh_cart_cont{
+                width: 720px;
+                position: relative;
+                background: #FFFFFF;
+                float: right;
+                margin-right: 20px;
+                .shadow_lf{
+                    width: 5px;
+                    height: 80%;
+                    position: absolute;
+                    z-index: 0;
+                    border-radius: 5px;
+                    left: 0;
+                    bottom: 0;
+                    .box_shadow-X();
+                }
+                .shadow_bt{
+                    width: 100%;
+                    height: 5px;
+                    position: absolute;
+                    z-index: 0;
+                    left: 0;
+                    bottom: 0;
+                    border-radius: 10px;
+                    .box_shadowY();
+                }
+                .shadow_rg{
+                    width: 10px;
+                    height: 80%;
+                    position: absolute;
+                    z-index: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 5px;
+                    .box_shadowX();
+                }
+                h1{
+                    padding-top: 20px;
+                    text-indent: 30px;
+                    line-height: 25px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: @fontColor;
+                }
+                .cart_gb{
+                    position: absolute;
+                    right: 0;
+                    top: 20px;
+                    line-height: 25px;
+                    color: #666666;
+                    h3{
+                        float: left;
+                        font-weight: normal;
+                        font-size: 15px;
+                        padding:0 20px;
+                    }
+                    span{
+                        font-size: 15px;
+                        padding:0 20px;
+                        float: left;
+                        i{
+                            font-style: normal;
+                            padding-right: 20px;
+                        }
+                        &.active{
+                            color: #000000;
+                            font-weight: bolder;
+                        }
+                    }
+                }
+                .My_site{
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 20px;
+                    .offer_site{
+                        img{
+                            display: block;
+                        }
+                    }
+                    .Notes{
+                        width: 600px;
+                        padding: 15px 30px;
+                        margin:0 auto;
+                        margin-bottom: 20px;
+                        background: #FFE285;
+                        border-radius: 10px;
+                        h3{
+                            font-size: 15px;
+                            color: #666666;
+                        }
+                        p{
+                            font-size: 12px;
+                            color: #666666;
+                            margin-top: 15px;
+                        }
+                    }
+                    .chose_addre{
+                        width: 660px;
+                        margin:0 auto;
+                        margin-bottom: 10px;
+                        span{
+                            text-indent: 5px;
+                            display: block;
+                            font-size: 14px;
+                            font-weight: bold;
+                            line-height: 30px;
+                            color: #333333;
+                        }
+                    }
+                    .write_addre{
+                        width: 660px;
+                        margin:0 auto;
+                        p{
+                            font-size: 12px;
+                            line-height: 30px;
+                            font-weight: bold;
+                            position: relative;
+                            text-indent: 25px;
+                            cursor: context-menu; 
+                            &:before{
+                                content: url(../img/write_addre.jpg);
+                                position: absolute;
+                                top: 2px;
+                                left: -15px;                            }
+                        }
+                        
+                        .Write{
+                            padding-top: 20px;
+                            padding-bottom: 10px;
+                            border-bottom:1px dashed #CCCCCC;
+                            span{
+                                float: left;
+                                width: 130px;
+                                line-height: 30px;
+                                text-indent: 35px;
+                                position: relative; 
+                                &:before{
+                                    content: "*";
+                                    color: red;
+                                    position: absolute;
+                                    top: -3px;
+                                    left: -10px;
+                                }
+                            }
+                            input{
+                                float: left;
+                                width: 423px;
+                                height: 18px;
+                                margin:5px 0;
+                                text-align: center;
+                            }
+                            div{
+                                &:after{
+                                    content: ".";
+                                    display: block;
+                                    height: 0;
+                                    clear: both;
+                                    visibility: hidden;
+                                }
+                            }
+                        }
+                    }
+                    .comfir_addre{
+                        width: 660px;
+                        margin:0 auto;
+                        border-bottom:1px dashed #CCCCCC;
+                        padding:10px 0;
+                        h4{
+                            color: #666666;
+                            a{
+                                color: #666666;
+                                text-decoration: underline; 
+                                &:hover{
+                                    color: #B0171F;
+                                }
+                            }
+                        }
+                        .exact_addre{
+                            width: 615px;
+                            padding: 10px;
+                            margin:30px auto;
+                            border-radius: 5px;
+                            background: #CCCCCC;
+                            p{
+                                line-height: 25px;
+                                font-size: 14px;
+                                color: #666666;
+                            }
+                            span{
+                                display: block;
+                                font-size: 10px;
+                                margin-top: 20px;
+                                color: #999999;
+                            }
+                            em{
+                                display: block;
+                                margin-top: 15px;
+                                font-style: normal;
+                                font-size: 14px;
+                                color: #666666; 
+                                a{
+                                    font-style: italic;
+                                    text-decoration: underline;
+                                    color: #666666;
+                                    &:hover{
+                                        color: #B0171F;
+                                    }
+                                }               
+                            }
+                        }
+                    }
+                    .Go_tonext{
+                        width: 660px;
+                        padding:10px 0;
+                        margin:0 auto;
+                        span{
+                            float: right;
+                            width: 145px;
+                            height: 26px;
+                            text-align: center;
+                            line-height: 26px;
+                            font-weight: bolder;
+                            color: white;
+                            letter-spacing: 2px;
+                            background: url(../img/pay_02.jpg) no-repeat center center;
+                            &:hover{
+                                cursor: pointer;
+                                color: #FFF000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

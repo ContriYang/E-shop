@@ -1,0 +1,363 @@
+@fontColor: #92846e;
+@hoverColor: #b0171f;
+@navColor: #fefefe;
+@navbgColor: #b8afa3;
+@navhovColor: #666;
+@inputBoderColor: #abadb3;
+@inputfontColor: #be9385;
+@priceUSDColor: #9e1d34;
+@shopborColor: #ffffff;
+@moreAColor: #666666;
+@footTopColor: #666;
+.box(){
+    width: 950px;
+    margin:0 auto;
+}
+.transformY(){
+    -webkit-transform:translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.transformX(){
+    -webkit-transform:translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.box_shadow-X(){
+    -webkit-box-shadow: -3px 0 5px #999999;
+    -moz-box-shadow: -3px 0 5px #999999;
+    box-shadow: -3px 0 5px #999999;
+}
+.box_shadowX(){
+    -webkit-box-shadow: 3px 0 3px #999999;
+    -moz-box-shadow: 3px 0 5px #999999;
+    box-shadow: 3px 0 5px #999999;
+}
+.box_shadow-Y(){
+    -webkit-box-shadow: 0px -3px 5px #999999;
+    -moz-box-shadow: 0px -3px 5px #999999;
+    box-shadow: 0px -3px 5px #999999;
+}
+.box_shadowY(){
+    -webkit-box-shadow: 0px 3px 5px #999999;
+    -moz-box-shadow: 0px 3px 5px #999999;
+    box-shadow: 0px 3px 5px #999999;
+}
+#main{
+    .content{
+        .shop_box{
+            width: 910px;
+            margin:0 auto;
+            &:before{
+                content: ".";
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+            }
+            .shop_left{
+                width: 170px;
+                float: left;
+                h3{
+                    color: @fontColor;
+                    line-height: 35px;
+                }
+                h4{
+                    color: @fontColor;
+                    font-weight: 100;
+                    line-height: 30px;
+                    &:hover{
+                        color: @hoverColor;
+                        cursor: pointer;
+                    }
+                }
+                li{
+                    width: 100%;
+                    text-indent: 5px;
+                    font-size: 12px;
+                    
+                    span{
+                        line-height: 25px;
+                        cursor: pointer;
+                        color: #333333;
+                        &:hover{
+                            color: @hoverColor;
+                        }
+                    }
+                    div{
+                        display: none;
+                        a{
+                            cursor: pointer;
+                            color: #333333;
+                            font-size: 9px;
+                            text-indent: 20px;
+                            line-height: 20px;
+                            display: block;
+                            &:hover{
+                                color: @hoverColor;
+                            }
+                        }
+                    }
+                    &.one{
+                        a{
+                            line-height: 25px;
+                            cursor: pointer;
+                            color: #333333;
+                            &:hover{
+                                color: @hoverColor;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .shop_right{
+                width: 720px;
+                float: right;
+                .Img{
+                    img{
+                        display: block;
+                    }
+                }
+                .submenu{
+                    width: 100%;
+                    background: #93846f;
+                    &:after{
+                        content: ".";
+                        display: block;
+                        height: 0px;
+                        clear: both;
+                        visibility: hidden;
+                    }
+                    li{
+                        float: left;
+                        height: 44px;
+                        margin:3px 0;
+                        position: relative;
+                        cursor: pointer;
+                        &.New_goods{
+                            width: 145px;
+                            border-right:1px solid #ad9e8f;
+                            p{
+                                width: 70%;
+                                float: left;
+                                padding-left:50px ;
+                                position: relative; 
+                                &:before{
+                                    content: url(../img/arrow_n.gif);
+                                    position: absolute;
+                                    top: 0;
+                                    left: 38px;
+                                }
+                                top:50%;
+                                .transformY();
+                            }
+                        }
+                        &.edit_share{
+                            width: 360px;
+                        }
+                        b,span{
+                            display: block;
+                            color: #FFFFFF;
+                        }
+                        b{
+                            color: #FFFFFF;
+                        }
+                        span{
+                            font-size: 9px;
+                        }
+                        p{
+                            width: 60%;
+                            float: left;
+                            padding-left:50px ;
+                            position: relative; 
+                            z-index: 1;
+                            &:before{
+                                content: url(../img/arrow_n.gif);
+                                position: absolute;
+                                top: 0;
+                                left: 38px;
+                            }
+                            top:50%;
+                            .transformY();
+                        }
+                        i{
+                            width: 100%;
+                            height: 50px;
+                            position: absolute;
+                            top: -3px;
+                            left: 0;
+                            background: #B8AFA3;
+                            z-index: 0;
+                            display: none;
+                        }
+                        img{
+                            position: absolute;
+                            left: 77px;
+                            top: 47px;
+                        }
+                        &:hover{
+                            i{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .goods_dis{
+                    position: relative;
+                    padding-bottom: 40px;
+                    margin-bottom: 20px; 
+                    &:after{
+                        content: ".";
+                        display: block;
+                        height: 0;
+                        clear: both;
+                        visibility: hidden;
+                    }
+                    .shop_lef{
+                        width: 10px;
+                        height: 80%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        border-bottom-left-radius: 10px;
+                        .box_shadow-X();
+                    }
+                    .shop_bot{
+                        width: 100%;
+                        height: 10px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        border-radius: 10px;
+                        .box_shadowY();
+                    }
+                    .shop_rig{
+                        width: 10px;
+                        height: 80%;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        border-bottom-right-radius: 10px;
+                        .box_shadowX();
+                    }
+                    .spacing{
+                        height: 20px;
+                    }
+                    li{
+                        float: left;
+                        width: 150px;
+                        height: 340px;
+                        background: #FFFFFF;
+                        position: relative;
+                        border: 1px solid @shopborColor;
+                        margin:0px 10px;
+                        margin-top: 5px;
+                        
+                        cursor: pointer;
+                        .goods_Img{
+                            width: 170px;
+                            height: 170px;
+                            margin:10px auto;
+                            overflow: hidden;
+                            position: relative;
+                            background: #FFFFFF;
+                            img{
+                                display: block;
+                                height: 94%;
+                                position: absolute;
+                                margin:auto;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                            }
+                        }
+                        .descripe{
+                            width: 140px;
+                            margin:0 auto;
+                            height: 95px;
+                            overflow: hidden;
+                            .label{
+                                width: 100%;
+                                height: 16px;
+                                img{
+                                    display: block;
+                                }
+                            }
+                            .shop_name{
+                                width: 100%;
+                                font-size: 12px;
+                                color: @fontColor;
+                                cursor: pointer;
+                                &:hover{
+                                    color: red;
+                                }
+                            }
+                            span{
+                                width: 140px;
+                                line-height: 15px;
+                                margin:0 auto;
+                                display: block;
+                                font-size: 9px;
+                                color: @fontColor;
+                                cursor: pointer; 
+                                &:hover{
+                                    color: red;
+                                }
+                            }
+                        }
+                        .hr{
+                            width: 150px;
+                            height: 1px;
+                            margin:0 auto;
+                            background: #666666;
+                            border-radius: 50%;
+                        }
+                        .shop_price{
+                            width: 140px;
+                            margin:0 auto;
+                            font-weight: bolder;
+                            .CNY{
+                                width: 100%;
+                                text-indent: 5px;
+                                font-size: 13px;
+                                font-weight:100 ;
+                                color: @fontColor;
+                            }
+                            .USD{
+                                width: 100%;
+                                font-size: 13px;
+                                text-indent: 5px;
+                                color: @priceUSDColor;
+                            }
+                            .save{
+                                width: 100%;
+                                display: block;
+                                font-size: 13px;
+                                text-indent: 5px;
+                                color: #dd7f95;
+                            }
+                        }
+                    }
+                    .more_shop{
+                        position: absolute;
+                        bottom: 20px;
+                        right: 20px;
+                        a{
+                            font-size: 10px;
+                            color: @moreAColor;
+                            &:hover{
+                                color: @hoverColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
